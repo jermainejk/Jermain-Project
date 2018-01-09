@@ -1,0 +1,68 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <html>
+    <head>
+
+
+        <title>
+        Parent Child Savings
+        </title>
+        <link rel = 'stylesheet' href="../static/css/style2.css">
+        <style>
+            #Con2{
+                height:450px;
+            }
+            </style>
+    </head>
+    <body>
+
+         <div id = 'MainContainer'>
+             <div id ='Con1'>
+                 <div id ='Con11'>
+                 <div id = 'MainTitle'>
+                     <h1>
+                         The future cost of education is increasing
+                     </h1>
+                     <p>
+                         Let us help you customise a range of solutions so that you can stay true to your child's dreams,no matter what the future brings.
+                     </p>
+                 </div>
+             </div>
+             </div>
+             <div id = 'Con2'>
+                 <div id ='Con22'>
+                 <div id = 'MainTitle'>
+                     <h1>
+                         Your Child's Education Planner
+                     </h1>
+                     <p>
+                         How much do i need to save for my children's education?
+                     </p>
+                     <hr>
+                     <div>
+                     <h3>
+                         Based on your risk profile, you will need to set aside
+                     </h3><br>
+                         <h3>
+                             A lump sum of S$17,652
+                         </h3><br>
+                         <p>or</p>
+                         <h3>
+                             Monthly amount of S$200 for 9 years
+                         </h3>
+                         <button type="button" id="btnClick"><a href="/enough">Previous</a></button>
+                     </div>
+                 </div>
+             </div>
+             </div>
+             <div id ='Con3'>
+                 <p>How do we do it ?</p>
+                                                       <button type="button" id="Tclick"><a href="/action">Let's start Planning Ahead !</a></button>
+
+             </div>
+
+         </div>
+
+    </body>
+    </html>
+{% endblock %}

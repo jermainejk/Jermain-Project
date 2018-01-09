@@ -1,0 +1,56 @@
+<{% extends 'layout.html' %}
+{% block body %}
+    <html>
+    <head>
+        <title>transfer</title>
+            <link rel = 'stylesheet' href="../static/css/style3.css">
+
+    <body>
+    <script>
+function myFunction() {
+    alert("You have confirm payment of S$600 to POSB Savings 208-201-202");
+}
+</script>
+    <div id ='wrapper'>
+    <div id="columnLeft1">
+        <h1>Transfer Set-Up</h1>
+          Add Child Savings No. :
+                         <input type="text" name="FirstChild" value="">
+        <br>
+        Second Child Savings No. :
+        <input type="text" name="SecondChild" value=""><br>
+                             <button type="button" id="btnClick"><a href="/">Add Child</a></button>
+                                             <button type="button" id="btnClick"><a href="/">Delete Child</a></button>
+
+
+         <br>
+                         Chose the amount money to be deposited every month:
+                          <select>
+                         <option value="two">S$200</option>
+                         <option value="four">S$400</option>
+                              <option value="six">S$600</option>
+                         <option value="eight">$800</option>
+                         </select>
+                         <br>
+                                     <button type="button" id="btnClick" onclick='myFunction()'><a href="/">Confirm Adjusted Transfer</a></button>
+
+
+
+    </div>
+     <div id="columnLeft2">
+         <h1>How far are you away from your Kids Education Goal</h1>
+         <b>Top up S$1000 to achieve your goal on time</b>
+         <br>
+         <progress value="22" max="100"></progress>
+         <br>
+
+         <h1>Saved so far : S$4000</h1>
+         <br>
+         <h1>By FEB 2021 you reach your goal !</h1>
+    </div>
+    </div>
+
+  ></body>
+    </html>
+
+{% endblock %}

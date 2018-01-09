@@ -1,0 +1,162 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <html>
+    <head>
+
+
+        <title>
+        Parent Child Savings
+        </title>
+        <link rel = 'stylesheet' href="../static/css/style2.css">
+        <style>
+            .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    </style>
+    </head>
+    <body>
+
+         <div id = 'MainContainer'>
+             <div id ='Con1'>
+                 <div id ='Con11'>
+                 <div id = 'MainTitle'>
+                     <h1>
+                         The future cost of education is increasing
+                     </h1>
+                     <p>
+                         Let us help you customise a range of solutions so that you can stay true to your child's dreams,no matter what the future brings.
+                     </p>
+                 </div>
+             </div>
+             </div>
+             <div id = 'Con2'>
+                 <div id ='Con22'>
+                 <div id = 'MainTitle'>
+                     <h1>
+                         Your Child's Education Planner
+                     </h1>
+                     <p>
+                         How much do i need to save for my children's education?
+                     </p>
+                     <hr>
+                     <h1>Estimated cost:</h1>
+                     <p>Tell how much have you set aside.</p>
+                     <form action="/action_page.php">
+                        I have set aside S$ <input type="text" name="setaside" value="">
+                         <br>
+                          This amount is expected to grow at:
+                          <select>
+                         <option value="twopercent">2%</option>
+                         <option value="threepercent">3%</option>
+                              <option value="fivepercent">5%</option>
+                         <option value="sevenpercent">7%</option>
+                         </select>
+                     </form>
+
+                     <button type="button" id="btnClick"><a href="/Details">Previous</a></button>
+                     <button type="button" id="btnClick"><a href="/enough">Next</a></button>
+                     <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div>
+       <h1>Risk Profile Tips</h1>
+    <p>2%(Very Conservative)<br>
+       You prefer to take a very conservative approach toward risks and returns. You focus on stable growth and accept lower risk.
+    </p>
+        <p>3%(Conservative)<br>
+You focus on earning potentially more than deposit interest on your investment, and accept some risk in products that spread your investment.
+    </p>
+        <p>5%(Blanced)<br>
+You focus on earning moderate potential returns and accept risk in both diversified and focused products.
+    </p>
+        <p>7%(Growth)<br>
+You focus on achieving higher potential returns and are willing to accept the loss of some or all of your investment.
+    </p>
+        <p>7%(Agressive)<br>
+You focus on achieving significantly higher potential returns and are willing to accept the loss of all or more than your investment.
+    </p>
+   </div>
+  </div>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+
+                 </div>
+             </div>
+             </div>
+             <div id ='Con3'>
+                 <p>How do we do it ?</p>
+             </div>
+
+         </div>
+
+    </body>
+    </html>
+{% endblock %}

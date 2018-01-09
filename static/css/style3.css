@@ -1,0 +1,16 @@
+#wrapper,#wrapper1{
+    margin: auto;
+    padding: auto;
+
+}
+#columnLeft1{
+    width :700px;
+    height:400px;
+    background-color: silver;
+}
+#columnLeft2{
+    width:700px;
+    height: 400px;
+    background-color: silver;
+
+}

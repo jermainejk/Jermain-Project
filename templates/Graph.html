@@ -1,0 +1,93 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <html>
+    <head>
+        <title>Register</title>
+        <style type = 'text/css'>
+            body {
+                background-color: #000000;
+                font: 1em/1.5 sans-serif;
+            }
+            h1{
+                text-align: center;
+                font-size: 50px;
+                color: white;
+            }
+            form{
+                margin:20px auto;
+                width: 320px;
+                color: black;
+            }
+            input{
+                padding:10px;
+                font-size: inherit;
+            }
+            input[type='text']{
+                display:block;
+                margin-bottom:25px;
+                width:100%;
+                border:rgba(224, 52, 106, 1);
+                background: #FAF6D9;
+            }
+            input[type='password'] {
+                display: block;
+                margin-bottom: 25px;
+                width: 100%;
+                border: rgba(224, 52, 106, 1);
+                background: #FAF6D9;
+            }
+             input[type='email'] {
+                 display: block;
+                 margin-bottom: 25px;
+                 width: 100%;
+                 border: rgba(224, 52, 106, 1);
+                 background: #FAF6D9;
+             }
+             input[type='radio'] {
+                 margin:0 8px 25px 18px;
+             }
+            input[type='radio']:first-child{
+                margin-left: 0;
+            }
+            input[type='submit']{
+                width:344px;
+                height:45px;
+                border:none;
+                background: rgba(224, 52, 106, 1);
+                color: white;
+            }
+            input[type='submit']:focus{
+                width:344px;
+                height:45px;
+                border:none;
+                background: white;
+                color: black;
+            }
+            input:focus{
+                background: white;
+            }
+            input[type='radio']:checked+label{
+                font-weight: bold;
+                font-size: 18px;
+            }
+            </style>
+    </head>
+    <body>
+
+    <h1>Register Form</h1>
+    <form>
+        <input type="text" placeholder="Firstname" required>
+        <input type="text" placeholder="Lastname" required>
+        <input type="text" placeholder="Savings Acct No." required>
+        <input type="password" placeholder="One-Time Password">
+        <input type="password" placeholder="Password" required>
+        <input type ='password'placeholder="Confirm Password">
+        <input type="submit" name="Submit">
+    </form>
+    </body>
+    </html>
+
+
+
+{% endblock %}

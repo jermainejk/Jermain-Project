@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <html>
+    <head>
+
+
+        <title>
+        Parent Child Savings
+        </title>
+        <link rel = 'stylesheet' href="../static/css/style2.css">
+    </head>
+    <body>
+
+    <script>
+
+        function myFunction(){
+            var myVariable = document.getElementById('Con2');
+            myVariable.innerHTML='Estimated cost: Ryans education will cost $475,000 in 7 years time.'
+        }
+    </script>
+         <div id = 'MainContainer'>
+             <div id ='Con1'>
+                 <div id ='Con11'>
+                 <div id = 'MainTitle'>
+                     <h1>
+                         The future cost of education is increasing
+                     </h1>
+                     <p>
+                         Let us help you customise a range of solutions so that you can stay true to your child's dreams,no matter what the future brings.
+                     </p>
+                 </div>
+             </div>
+             </div>
+             <div id = 'Con2'>
+                 <div id ='Con22'>
+                 <div id = 'MainTitle'>
+                     <h1>
+                         Your Child's Education Planner
+                     </h1>
+                     <p>
+                         How much do i need to save for my children's education?
+                     </p>
+                     <hr>
+                     <form action="/action_page.php" id="1">
+                         Child's name:
+                         <input type="text" name="firstname" value="">
+                         <br>
+                         Current age:
+                         <input type="text" name="age" value="">
+                         <br>
+                         Gender:
+                         <select value="Please select a gender">
+                         <option value="male">Male</option>
+                         <option value="female">Female</option>
+                         </select>
+                         <br>
+                         Choice of degree:
+                          <select>
+                         <option value="Medicine">Medicine</option>
+                         <option value="General">General</option>
+                         </select>
+                         <br>
+                         Choice of study:
+                          <select>
+                         <option value="usaprivate">USA(Private)</option>
+                         <option value="usastate">USA(State)</option>
+                         <option value="canada">Canada</option>
+                         <option value="uk">United Kingdom</option>
+                              <option value="volvo">Australia</option>
+                         <option value="nz">New Zealand</option>
+                         <option value="sg">Singapore(SG Citizen)</option>
+                         <option value="sgi">Singapore(Intl Student)</option>
+                         </select>
+                         <br>
+                         <br>
+
+
+</div>
+                     <button type="button" id="btnClick"><a href="/Details">Estimate the cost!</a></button>
+
+                             </div> </form>
+                 </div>
+             </div>
+             </div>
+             <div id ='Con3'>
+                 <p>How do we do it ?</p>
+                                      <button type="button" id="Tclick"><a href="/action">Let's start Planning Ahead !</a></button>
+
+             </div>
+
+         </div>
+
+    </body>
+    </html>
+{% endblock %}

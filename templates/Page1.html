@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <html>
+    <head>
+
+
+        <title>
+        Parent Child Savings
+        </title>
+        <link rel = 'stylesheet' href="../static/css/style2.css">
+    </head>
+    <body>
+
+         <div id = 'MainContainer'>
+             <div id ='Con1'>
+                 <div id ='Con11'>
+                 <div id = 'MainTitle'>
+                     <h1>
+                         The future cost of education is increasing
+                     </h1>
+                     <p>
+                         Let us help you customise a range of solutions so that you can stay true to your child's dreams,no matter what the future brings.
+                     </p>
+                 </div>
+             </div>
+             </div>
+             <div id = 'Con2'>
+                 <div id ='Con22'>
+                 <div id = 'MainTitle'>
+                     <h1>
+                         Your Child's Education Planner
+                     </h1>
+                     <p>
+                         How much do i need to save for my children's education?
+                     </p>
+                     <hr>
+                     <h1>Estimated cost:</h1>
+                     <p>Tell how much have you set aside.</p>
+                     <form action="/action_page.php">
+                        I have a aside S$ <input type="text" name="setaside" value="">
+                         <br>
+                     </form>
+
+                     <button type="button" id="btnClick"><a href="/Details">Previous</a></button>
+                     <button type="button" id="btnClick"><a href="#">Next</a></button>
+                 </div>
+             </div>
+             </div>
+             <div id ='Con3'>
+                 <p>How do we do it ?</p>
+             </div>
+
+         </div>
+
+    </body>
+    </html>
+{% endblock %}
